@@ -1,2 +1,17 @@
-# learning
-Deliberate practice on modern backend technologies (Kubernetes, gRPC, Rust, etc. ) and foundational mathematics.
+# Learning Repository
+
+## Purpose
+Deliberate practice on modern backend technologies.
+Each section documents: what I learned, problems I solved, and how I applied it.
+
+## Progression
+- **Docker** — containerization basics
+- **Kubernetes** — orchestration basics
+- **gRPC** — service communication
+- **Rust** — systems programming
+- **System Design** — architectural patterns
+
+## What I'm still learning
+- [x] Basic Docker deployment
+- [ ] Advanced Docker networking
+- [ ] Docker Compose for multi-container apps

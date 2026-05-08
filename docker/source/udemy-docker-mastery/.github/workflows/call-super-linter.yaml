@@ -1,0 +1,29 @@
+---
+# template source: https://github.com/bretfisher/super-linter-workflow/blob/main/templates/call-super-linter.yaml
+name: Lint Code Base
+
+on:
+  pull_request:
+
+jobs:
+  call-super-linter:
+    name: Call Super-Linter
+
+    permissions:
+      contents: read # clone the repo to lint
+      pull-requests: write # create a summary comment in PR
+      statuses: write #read/write to repo custom statuses
+
+    ### use Reusable Workflows to call my workflow remotely
+    ### https://docs.github.com/en/actions/learn-github-actions/reusing-workflows
+    ### you can also call workflows from inside the same repo via file path
+
+    # NOTE: zizmor scanner rule ignore added because we control sha pins via reusable workflow, not calling workflow
+    uses: bretfisher/super-linter-workflow/.github/workflows/reusable-super-linter.yaml@main # zizmor: ignore[unpinned-uses]
+
+    ### Optional settings examples
+
+    with:
+      ### A regex to exclude files from linting
+      ### defaults to empty
+      filter-regex-exclude: .*compose-sample-3/html/.*,.*dockerfile-sample-5/.*
