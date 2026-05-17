@@ -5,6 +5,7 @@ Deliberate practice on modern backend technologies.
 Each section documents: what I learned, problems I solved, and how I applied it.
 
 ## Progression
+- **WebSockets** — real-time communication
 - **Docker** — containerization basics
 - **Kubernetes** — orchestration basics
 - **gRPC** — service communication

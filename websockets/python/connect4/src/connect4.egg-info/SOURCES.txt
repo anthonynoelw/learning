@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/connect4.py
+src/server.py
+src/connect4.egg-info/PKG-INFO
+src/connect4.egg-info/SOURCES.txt
+src/connect4.egg-info/dependency_links.txt
+src/connect4.egg-info/requires.txt
+src/connect4.egg-info/top_level.txt
